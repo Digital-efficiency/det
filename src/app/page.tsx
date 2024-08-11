@@ -26,7 +26,7 @@ export default function Home() {
       <Divider />
       <div className={styles.app_content}>
         <Flex wrap gap="small">
-          <InfoCard title="颜色拾取器" icon={colorPickIcon} click={openColorPicker} />
+          <InfoCard title="颜色工具" icon={colorPickIcon} click={openColorPicker} />
         </Flex>
       </div>
     </main>
