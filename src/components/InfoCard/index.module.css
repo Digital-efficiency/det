@@ -1,4 +1,5 @@
 .de_info_card {
+  cursor: pointer;
   padding: 1rem;
   border-radius: 12px;
   background: #f6f4fd;

@@ -20,5 +20,6 @@ export interface InfoCardProps {
   content?: string | React.ReactNode,
   width?: number,
   height?: number,
-  icon?: React.ReactNode
+  icon?: React.ReactNode,
+  click?: React.MouseEventHandler<HTMLDivElement>
 }

@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh">
-      <body className={inter.className}>
+    <html lang="zh" className="app_background min-h-svh">
+      <body className={inter.className} >
         <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>

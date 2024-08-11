@@ -1,14 +1,24 @@
-import React from 'react';
+'use client';
+import type React from 'react';
 import { Divider, Flex } from 'antd';
-import { AppstoreOutlined, BgColorsOutlined } from '@ant-design/icons'
+import { AppstoreOutlined, BgColorsOutlined } from '@ant-design/icons';
+import { useRouter } from 'next/navigation';
 import { InfoCard } from '@/components';
 import styles from './page.module.css';
 
 export default function Home() {
+  // Defines a React node representing the "BgColorsOutlined" icon.
+  // This node will be used as the color picker icon.
   const colorPickIcon: React.ReactNode = <BgColorsOutlined />
 
+  const router = useRouter();
+
+  const openColorPicker: React.MouseEventHandler<HTMLDivElement> = () => {
+    router.push('/colorPick')
+  }
+
   return (
-    <main className="app_background min-h-svh">
+    <main>
       <div className={styles.app_title}>
         <AppstoreOutlined className={styles.app_icon} />
         前端常用工具集
@@ -16,7 +26,7 @@ export default function Home() {
       <Divider />
       <div className={styles.app_content}>
         <Flex wrap gap="small">
-          <InfoCard title="颜色拾取器" icon={colorPickIcon} />
+          <InfoCard title="颜色拾取器" icon={colorPickIcon} click={openColorPicker} />
         </Flex>
       </div>
     </main>
