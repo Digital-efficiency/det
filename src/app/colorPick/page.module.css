@@ -1,0 +1,23 @@
+.page_picker_header {
+  margin: 1.5rem 0 0.5rem 1rem;
+}
+
+.page_picker_header_text {
+  margin-left: 0.5rem;
+}
+
+.page_picker_content {
+  padding: 0.5rem 1.5rem;
+}
+
+.page_picker_content_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page_picker_content_top_space {
+  width: 66.7%;
+  height: 24px;
+  margin: -8px 0 8px 33.3%;
+}
