@@ -3,3 +3,4 @@
 // This is useful for re-exporting modules, making it easier to manage imports in other parts of the application.
 
 export * from './color';
+export * from './router';

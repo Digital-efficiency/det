@@ -10,9 +10,9 @@ export default function Home() {
   // Defines a React node representing the "BgColorsOutlined" icon.
   // This node will be used as the color picker icon.
   const colorPickIcon: React.ReactNode = <BgColorsOutlined />
-
+  // get router
   const router = useRouter();
-
+  // go to color picker page
   const openColorPicker: React.MouseEventHandler<HTMLDivElement> = () => {
     router.push('/colorPick')
   }
