@@ -16,6 +16,10 @@ export default function Home() {
   const openColorPicker: React.MouseEventHandler<HTMLDivElement> = () => {
     router.push('/colorPick')
   }
+  // go to ports list page
+  const openPortsList: React.MouseEventHandler<HTMLDivElement> = () => {
+    router.push('/portsList')
+  }
 
   return (
     <main>
@@ -27,6 +31,7 @@ export default function Home() {
       <div className={styles.app_content}>
         <Flex wrap gap="small">
           <InfoCard title="颜色工具" icon={colorPickIcon} click={openColorPicker} />
+          <InfoCard title="端口工具" icon={colorPickIcon} click={openPortsList} />
         </Flex>
       </div>
     </main>
