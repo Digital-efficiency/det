@@ -5,7 +5,7 @@ mod ports;
 
 fn main() {
   tauri::Builder::default()
-    .invoke_handler(tauri::generate_handler![ports::get_open_ports])
+    .invoke_handler(tauri::generate_handler![ports::get_open_ports, ports::kill_process])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }

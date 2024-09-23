@@ -12,6 +12,9 @@ export default function PortsListPage(): React.ReactElement {
         setPortList(res)
       })
       .catch(console.error)
+    invoke<string>('kill_process', { identifier: 11788 })
+      .then(console.log)
+      .catch(console.error)
   }, [])
 
   return (
